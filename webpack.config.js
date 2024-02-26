@@ -15,6 +15,12 @@ module.exports = {
     devtool: "source-map",
     // production, development 두 개가 있음
     mode: "development",
+    devServer: {
+        host: "localhost",
+        port: 8080,
+        open: true,
+        watchFiles: 'index.html'
+    },
     plugins: [
         new HtmlWebpackPlugin({
              title: "keyboard",
